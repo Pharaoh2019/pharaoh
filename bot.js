@@ -45,7 +45,7 @@ message.channel.send('** يجب ان يكون لديك برمشن ،"MANAGE_ROLE
 });
 //Narox
 client.on('message', message=>{
-if (message.content ===  '%color 100'){
+if (message.content ===  '&color '){
 if(!message.channel.guild) return;
 if (message.member.hasPermission('MANAGE_ROLES')){
   setInterval(function(){})
