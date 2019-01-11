@@ -56,7 +56,7 @@ const pubg = [
 ]
    client.on('message', message => {
        if (message.author.bot) return;
- if (message.content.startsWith('=pubg')) {
+ if (message.content.startsWith('%pubg')) {
      if(!message.channel.guild) return message.reply('** This command only for servers **');
   var client= new Discord.RichEmbed()
   .setTitle("لعبه اسئله باتل جرواند")
