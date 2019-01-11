@@ -34,7 +34,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
 
 client.on('message', function(message) {
     if(!message.channel.guild) return;
-if(message.content ===  '&color ') {
+if(message.content ===  '%color 100') {
 if(message.member.hasPermission('MANAGE_ROLES')) {
 setInterval(function(){})
 message.channel.send('سيتم عمل الالوان انتظر ...')//Narox
@@ -45,13 +45,13 @@ message.channel.send('** يجب ان يكون لديك برمشن ،"MANAGE_ROLE
 });
 //Narox
 client.on('message', message=>{
-if (message.content ===  '&color '){
+if (message.content ===  '%color 100'){
 if(!message.channel.guild) return;
 if (message.member.hasPermission('MANAGE_ROLES')){
   setInterval(function(){})
     let count = 0;
     let ecount = 0;
-for(let x = 1; x < 10; x++){//اذا تريد ان تقوم بزياده الالوان قم بتعديل رقم 100
+for(let x = 1; x < 100; x++){//اذا تريد ان تقوم بزياده الالوان قم بتعديل رقم 100
 message.guild.createRole({name:x,
 color: 'RANDOM'})
 }
